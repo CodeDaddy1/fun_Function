@@ -7,26 +7,27 @@
 
 using namespace std;
 
-string regerge(string first_Name,string  last_Name) {
-	string result = last_Name + ", " + first_Name ;
+string regerge(string house_Number,string  street_Name) {
+	string result = house_Number + " " + street_Name;
 	return result;
 }
 
 int main() 
 {
-	string first_Name;
-	string last_Name;
-	
+	string house_Number;
+	string street_Name;
+	string city;
+	string zipcode;
 
-	cout << "What is your first name?\n";
-	cin >> first_Name;
+	cout << "What is your house number?\n";
+	cin >> house_Number;
 	cout << endl;
-	cout << "What is your last name?\n";
-	cin >> last_Name;
+	cout << "What is your street name?\n";
+	cin >> street_Name;
 	cout <<  endl;
 
 	string result;
-	result = regerge(first_Name, last_Name);
+	result = regerge(house_Number, street_Name);
 	cout << result;
 
 
